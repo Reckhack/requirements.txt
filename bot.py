@@ -17,7 +17,7 @@ async def price(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ticker = exchange.fetch_ticker(symbol)
     await update.message.reply_text(f"{symbol} Price: {ticker['last']}")
 
-app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
+app = ApplicationBuilder().token(7662683236:AAEFa7MdRierChQgU0i2M7pbBqPQMVCuS4A).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("price", price))
 
